@@ -9,7 +9,7 @@ Construir vista en el único componente que posee el proyecto, teniendo como ref
 ## Guía 📋
 Para empezar, realiza un fork del proyecto, después, haz un commit con el comentario "Inicio prueba UI 3it".
 
-* Teniendo el repositorio local, ubica la raíz `/dev-ui-test`
+* Teniendo el repositorio local, ubica la raíz
 * Instala las librerías de Angular `npm install`
 * Levanta el proyecto `ng serve` y visualiza en `http://localhost:4200`
 * Al terminar la prueba, publica tus cambios
@@ -31,4 +31,4 @@ Para empezar, realiza un fork del proyecto, después, haz un commit con el comen
 
 ##
 
-###*Run Forrest! Run!* ⚡️
+### *Run Forrest! Run!* ⚡️
