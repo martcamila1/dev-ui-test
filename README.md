@@ -17,7 +17,7 @@ Para empezar, realiza un fork del proyecto, después, haz un commit con el comen
 
 
 ## Recursos 📦
-* Iconografía:
+* Iconografía
 [Material icons](https://material.io/resources/icons/?style=baseline) 
 * Tipografía: [Roboto](https://fonts.google.com/specimen/Roboto)
 * Colores: `$color1, $color2, $color3, $color4, $color5` en `styles.scss`
