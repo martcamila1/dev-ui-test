@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  totalBlue = 0
+  totalRed = 0
   dataDummy = [
     {
       'name': 'Stephen',
@@ -44,4 +46,21 @@ export class AppComponent {
       return (b.value) - (a.value);
     })
 }
+ngOnInit() {
+  
+  for (let i = 0; i < this.dataDummy.length; i++) {
+     
+    if(this.dataDummy[i].color == 'blue'){
+      
+      this.totalBlue += this.dataDummy[i].value
+      
+    }
+    else if(this.dataDummy[i].color == 'red') { 
+      this.totalRed += this.dataDummy[i].value
+      
+    }
+    
+  }
+}
+
 }
