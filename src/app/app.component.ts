@@ -40,22 +40,30 @@ export class AppComponent {
       'value': 17
     },
   ]
-
+//función para ordenar dataDummy
   get sortData() {
     return this.dataDummy.sort((a, b) => {
       return (b.value) - (a.value);
     })
 }
+
+//función para realizar sumatoria de acuerdo al color 
 ngOnInit() {
-  
+
+  // recorrer data
   for (let i = 0; i < this.dataDummy.length; i++) {
      
+    // condición para seleccionar color azul
     if(this.dataDummy[i].color == 'blue'){
       
+      //sumatoria
       this.totalBlue += this.dataDummy[i].value
       
     }
-    else if(this.dataDummy[i].color == 'red') { 
+  // condición para seleccionar color rojo
+    else { 
+
+      //sumatoria
       this.totalRed += this.dataDummy[i].value
       
     }

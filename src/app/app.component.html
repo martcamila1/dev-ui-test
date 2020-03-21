@@ -3,83 +3,79 @@
 <!-- * * * * * * * Prueba Práctica de Desarrollo UI * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<!-- <div class="main">
-  <div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -40 355 355" width="50">
-      <g class="primary-background">
-          <path d="M93,272A19,19,0,0,1,77.44,242.1L127.75,170,40.37,150.43a19,19,0,0,1-1.75-36.63L150.27,77.3l-136.59-40A19,19,0,0,1,24.37.77L219.86,58.06a19,19,0,0,1,.56,36.32L116.18,128.46l47.55,10.67a19,19,0,0,1,11.44,29.44l-66.55,95.31A19,19,0,0,1,93,272Z"/>
-      </g>
-      <g class="primary-background">
-          <path d="M218,200.69c-12.46,0-19.27-4.43-24.15-10.09a1.8,1.8,0,0,1,.33-2.66l7.48-8.5c1-.85,1.71-.64,2.56.22,3.5,3.42,7.44,5.45,15.11,5.48,6.39,0,11.84-3.7,13.24-11.26,1.2-6.39-3-9.7-9.66-9.72a29.34,29.34,0,0,0-7,.94,1.63,1.63,0,0,1-2.23-1.29L212,157.73a2.18,2.18,0,0,1,.76-2.34l19.22-16.88-23.86-.07a1.67,1.67,0,0,1-1.7-2l2.17-11.5a1.74,1.74,0,0,1,1.92-1.7l42.93.13a1.67,1.67,0,0,1,1.7,2l-1.73,9a2.78,2.78,0,0,1-1.07,2.13l-19.87,17.09v.11c11-.29,18.51,9.85,16.45,21.57C245.85,191.82,234.21,200.74,218,200.69Z"/>
-          <path d="M273.1,197.87a1.86,1.86,0,0,1-1.92,1.7l-13.21,0a1.68,1.68,0,0,1-1.7-2l13-72.41a1.91,1.91,0,0,1,2-1.7l13.11,0a1.59,1.59,0,0,1,1.7,2Z"/>
-          <path d="M352.59,123.63a1.56,1.56,0,0,1,1.7,2l-2.17,11.72a1.73,1.73,0,0,1-1.92,1.69l-18.43,0-10.62,59a1.86,1.86,0,0,1-1.92,1.7l-13.32,0a1.56,1.56,0,0,1-1.59-2L314.94,139l-18.22-.05c-1.28,0-1.81-.86-1.7-2l2.17-11.72a1.86,1.86,0,0,1,1.92-1.7Z"/>
-      </g>
-    </svg>
-    <h5>Happy Hunger Games! And may the odds be ever in your favor.</h5>
-  </div>
-</div> -->
 
 <div>
+  <header>
   <nav class="navbar">
 
-    <li></li>
-    <li class="">Alberto Hofmann</li>
+    <li>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -40 355 355" width="50">
+        <g class="primary-background">
+          <path
+            d="M93,272A19,19,0,0,1,77.44,242.1L127.75,170,40.37,150.43a19,19,0,0,1-1.75-36.63L150.27,77.3l-136.59-40A19,19,0,0,1,24.37.77L219.86,58.06a19,19,0,0,1,.56,36.32L116.18,128.46l47.55,10.67a19,19,0,0,1,11.44,29.44l-66.55,95.31A19,19,0,0,1,93,272Z" />
+        </g>
+
+          </svg>
+    </li>
+
+    <li>
+      <p class="name">Alberto Hofmann</p> <i id="iconAccountCircle"class="material-icons">account_circle</i>
+    </li>
 
 
   </nav>
-  <div class="containerH3">
-   <h3 class="indicators">Indcadores</h3>
-   <h3 class="date">Diciembre 2019</h3>
 
-  </div>
+</header>
 
-  <div class="containerRankingAndStatus">
+  <section class="containerH3">
+    <h3 class="indicators">Indcadores</h3>
+    <h3 class="date">Diciembre 2019</h3>
 
-  <div class="containerRanking">
-    <div class="titleRanking">Ranking</div>
-   
-      <li class="containerText" *ngFor="let item of sortData">
-        <p class="text">{{ item.name }}</p>
+  </section>
+
+  <section class="containerRankingAndStatus">
+
+    <article class="containerRanking">
+      <div class="titleRanking">Ranking</div>
+
+      <li class="containerText" *ngFor="let item of sortData ; index as i">
+        <p class="index">{{i+1}}</p>
+        <p class="textName">{{ item.name }} {{ item.lastname }}</p>
         <p class={{item.color}}>{{item.value}}</p>
 
       </li>
 
-  
-  </div>
 
-  <div class="statuscontainer">
-   <div class="titleStatus">Estatus</div>
-   
-   <div class="containerTitleBlueAndMeta">
-   <h5 class="titleBlue">Azules</h5> <h5 class="meta">Meta: 100</h5>
-  </div>
-   <meter id="meterBlue" min="0" low="100" high="25" max="100" value={{totalBlue}} optimum="20">valor 20</meter> 
-   <div class="containerTitleRedAndMeta">
-   <h5 class="titleRed">Rojos</h5> <h5 class="meta">Meta: 100</h5>
-  </div>
-   <meter id="meterRed" min="0" low="100" high="25" max="100" value={{totalRed}} optimum="20">valor 20</meter> 
- 
-  </div>
+    </article>
 
-</div>
-  <!-- <table class="containerRanking">
-    <tr>
+    <article class="statuscontainer">
+      <div class="titleStatus">Estatus</div>
 
-      <th class="titleRanking">Ranking</th>
+      <div class="containerTitleBlueAndMeta">
+        <h5 class="titleBlue">Azules</h5>
+        <h5 class="meta">Meta: 100</h5>
+      </div>
+
+      <meter id="meterBlue" min="0" low="100" high="25" max="100" value={{totalBlue}} optimum="20"></meter>
+      <p class="totalBlue">{{totalBlue}}</p>
+      <div class="containerTitleRedAndMeta">
+        <h5 class="titleRed">Rojos</h5>
+        <h5 class="meta">Meta: 100</h5>
+      </div>
+
+      <meter id="meterRed" min="0" low="100" high="25" max="100" value={{totalRed}} optimum="20">valor 20</meter>
+      <p class="totalRed">{{totalRed}}</p>
+    </article>
+
+
+
+  </section>
+
+  <div class="containerButton">
+    <button class="backButton"><i id="material-icons" class="material-icons">chevron_left</i>ATRÁS</button>
+    <button class="nextButton">SIGUIENTE</button>
+
+  </div>
   
-    </tr>
-    <tr class="containerText" *ngFor="let item of sortData">
-  
-      <td class="text">{{ item.name }}</td>
-  
-      <td class={{item.color}}>{{item.value}}</td>
-  
-    
-  
-    </tr>
-  
-  
-  </table> -->
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
