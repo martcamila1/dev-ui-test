@@ -63,15 +63,15 @@ ol{
 }
 .containerRanking{
   border-radius: 5px;
-  border:solid 1px $color2;
-  width: 270px;
+  border: solid 1px $color3;
+  width: 260px;
   height: 200px;
   margin-left: 30px;
   margin-top: 10px;
-  margin-right: 40px;
+  margin-right: 0px;
 }
 
-.titleRanking{
+.titleRanking  ,.titleStatus{
   background-color: #888888;
     color: #EEEEEE;
     height: 35px;
@@ -105,6 +105,53 @@ ol{
 .date{
   font-size: 18px;
   font-weight: 200;
+  margin-right: 20px
 }
 
+.containerRankingAndStatus{
+  display: flex;
+  flex-direction: row;
+  
+}
+.statuscontainer{
+  height: 200px;
+  width: 600px;
+  border-radius: 5px;
+  border: solid 1px #888888;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+#meterBlue::-webkit-meter-bar , #meterRed::-webkit-meter-bar {
+  background:$color3
+}
+
+   
+#meterBlue::-webkit-meter-optimum-value{
+  background:$color4
+}
+
+#meterRed::-webkit-meter-optimum-value{
+  background:$color5
+}
+
+meter{
+  height: 30px;
+  width: 550px;
+  margin-left: 20px
+   }
+
+.titleBlue , .titleRed , .meta{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 25px;
+}
+
+.containerTitleBlueAndMeta , .containerTitleRedAndMeta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
