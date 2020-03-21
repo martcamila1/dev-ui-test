@@ -1,6 +1,6 @@
 @import '../styles';
 .primary-background {
-    fill: $color1;
+    fill: white;
     background-color: $color1;
 }
 .main {
@@ -27,7 +27,10 @@
     align-items: center;
     list-style: none;
 }
+svg{
+  margin-left: 20px;
 
+}
 .li{
   color:$color3;
   margin-right: 40px;
@@ -35,27 +38,48 @@
   font-size: 18px;
 }
 
-.red{
-  color: red;
+#iconAccountCircle{
+  color: white;
+  margin-right: 20px;
+}
+.name{
   display: inline;
   margin-right: 10px;
-  font-weight: 600;
-  font-size: 14px;
+  color:white;
+  font-weight:100 ;
+  font-size: 14px
+}
+
+.red{
+  color: $color5;
+    display: inline;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 70px;
 }
 
 
 .blue{
-  color:blue;
+  color: $color4;
   display: inline;
   margin-right: 10px;
   font-weight: 600;
   font-size: 14px;
+  margin-left: 70px;
 }
-.text{
+
+.index{
   display: inline;
-  margin-left: 30px;
+  margin-left: 8px;
+}
+.textName{
+  
   font-weight: 600;
   font-size: 14px;
+  margin-left: 30px;
+  width: 300px;
+
 }
 ol{
   display: flex;
@@ -72,22 +96,23 @@ ol{
 }
 
 .titleRanking  ,.titleStatus{
-  background-color: #888888;
-    color: #EEEEEE;
+  background-color: $color2;
+    color: $color3;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .containerText{
   justify-content: space-between;
-  border: solid 1px #888888;
+  border: solid 1px $color3;
   list-style: none;
-  display: flex;
   height: 31px;
+  -webkit-box-align: center;
   align-items: center;
+  display: flex;
 }
 
 .containerH3{
@@ -105,7 +130,8 @@ ol{
 .date{
   font-size: 18px;
   font-weight: 200;
-  margin-right: 20px
+  margin-right: 20px;
+  margin-top: 25px;
 }
 
 .containerRankingAndStatus{
@@ -117,7 +143,7 @@ ol{
   height: 200px;
   width: 600px;
   border-radius: 5px;
-  border: solid 1px #888888;
+  border: solid 1px $color3;
   margin-left: 30px;
   margin-top: 10px;
   margin-right: 20px;
@@ -147,11 +173,59 @@ meter{
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 25px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.totalBlue{
+  color: $color3;
+  position: absolute;
+  top: 210px;
+  left: 535px;
+  font-size: 12px;
 }
 
+.totalRed{
+  color: $color3;
+  position: absolute;
+  top: 275px;
+  left: 435px;
+  font-size: 12px;
+}
 .containerTitleBlueAndMeta , .containerTitleRedAndMeta {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.backButton{
+  color: $color1;
+    border: $color1 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 35px;
+    background: white;
+}
+
+.nextButton{
+  background-color: $color1;
+    color: #EEEEEE;
+    width: 130px;
+    height: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border:none
+}
+
+.containerButton{
+  display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  
+}
+
+#material-icons{
+  color:$color1
+}
