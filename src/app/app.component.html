@@ -19,14 +19,49 @@
   </div>
 </div> -->
 
-<div >
+<div>
   <nav class="navbar">
+
+    <li></li>
+    <li class="">Alberto Hofmann</li>
+
+
+  </nav>
+  <div class="containerH3">
+   <h3 class="indicators">Indcadores</h3>
+   <h3 class="date">Diciembre 2019</h3>
+
+  </div>
+  <div class="containerRanking">
+    <div class="titleRanking">Ranking</div>
+   
+      <li class="containerText" *ngFor="let item of sortData">
+        <p class="text">{{ item.name }}</p>
+        <p class={{item.color}}>{{item.value}}</p>
+
+      </li>
+
+  
+  </div>
+
+  <!-- <table class="containerRanking">
+    <tr>
+
+      <th class="titleRanking">Ranking</th>
+  
+    </tr>
+    <tr class="containerText" *ngFor="let item of sortData">
+  
+      <td class="text">{{ item.name }}</td>
+  
+      <td class={{item.color}}>{{item.value}}</td>
+  
     
-        <li></li>
-        <li>Alberto Hofmann</li>
-        
-    
-</nav>
+  
+    </tr>
+  
+  
+  </table> -->
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

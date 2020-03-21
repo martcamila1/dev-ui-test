@@ -38,4 +38,10 @@ export class AppComponent {
       'value': 17
     },
   ]
+
+  get sortData() {
+    return this.dataDummy.sort((a, b) => {
+      return (b.value) - (a.value);
+    })
+}
 }

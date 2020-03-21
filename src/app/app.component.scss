@@ -25,13 +25,86 @@
     justify-content: space-between;
     text-decoration: none;
     align-items: center;
+    list-style: none;
 }
 
-li{
+.li{
   color:$color3;
   margin-right: 40px;
   list-style: none;
   font-size: 18px;
+}
+
+.red{
+  color: red;
+  display: inline;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+.blue{
+  color:blue;
+  display: inline;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.text{
+  display: inline;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 14px;
+}
+ol{
+  display: flex;
+  flex-direction: column;
+}
+.containerRanking{
+  border-radius: 5px;
+  border:solid 1px $color2;
+  width: 270px;
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.titleRanking{
+  background-color: #888888;
+    color: #EEEEEE;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.containerText{
+  justify-content: space-between;
+  border: solid 1px #888888;
+  list-style: none;
+  display: flex;
+  height: 31px;
+  align-items: center;
+}
+
+.containerH3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.indicators{
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.date{
+  font-size: 18px;
+  font-weight: 200;
 }
 
 
